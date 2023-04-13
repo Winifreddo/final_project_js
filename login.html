@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <script
+      src="https://kit.fontawesome.com/9695737191.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./CSS/login.css" />
+    <script src="jquery-3.6.4.js"></script>
+  </head>
+  <body>
+    <div class="transition transition-2 is-active"></div>
+
+    <!-- login form -->
+    <div class="login-wrapper">
+      <div class="child-wrapper">
+        <h3 id="login-heading">Login</h3>
+        <form action="" id="login" class="form">
+          <p id="error-message"></p>
+          <label for="username"
+            ><i class="fa-solid fa-user"></i> Username</label
+          >
+          <div class="error-color">
+            <input
+              type="text"
+              class="login-input"
+              id="username-field"
+              name="username"
+            />
+          </div>
+
+          <label for="password-field"
+            ><i class="fa-solid fa-lock"></i> Password</label
+          >
+          <div class="error-color">
+            <input
+              class="login-input"
+              type="password"
+              id="password-field"
+              name="password-field"
+            />
+          </div>
+          <p><a href="" class="password-prompt"> Forgotten password?</a></p>
+          <button class="submit" type="submit" id="login-submit">Login</button>
+        </form>
+      </div>
+      <!-- signup form -->
+      <div class="child-wrapper2">
+        <img
+          class="signup-img"
+          src="./CSS/images/logo.png"
+          alt="logo"
+          height="182em"
+        />
+        <nav>
+          <ul class="menu">
+            <li class="menu-item active">
+              <a href="home.html">Back To Home</a>
+            </li>
+          </ul>
+        </nav>
+        <h3>Not a Member yet?</h3>
+        <p>Sign up to get access to great content and offers!</p>
+        <button class="trigger"><a href="register.html"> Sign Up</a></button>
+      </div>
+    </div>
+    <script src="./JavaScript/home.js"></script>
+    <script src="./JavaScript/login.js"></script>
+  </body>
+</html>
