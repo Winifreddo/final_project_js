@@ -41,15 +41,15 @@ $(document).ready(function () {
     } else if (!emailTest) {
       errorMes.html(errorArr[1]);
       errorMes.css("color", "red");
-      signUpIds.eq(1).css("border", "1px solid red");
+      signUpIds.eq(2).css("border", "1px solid red");
     } else if (!createUNameTest) {
       errorMes.html(errorArr[2]);
       errorMes.css("color", "red");
-      signUpIds.eq(2).css("border", "1px solid red");
+      signUpIds.eq(3).css("border", "1px solid red");
     } else if (!createPassTest) {
       errorMes.html(errorArr[3]);
       errorMes.css("color", "red");
-      signUpIds.eq(3).css("border", "1px solid red");
+      signUpIds.eq(4).css("border", "1px solid red");
     } else {
       // modal toggle function
       const modal = $(".buttontologin");
