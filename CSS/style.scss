@@ -1,0 +1,420 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&family=Jost:wght@200;300;400;500&display=swap");
+
+*,
+*::before,
+*::after,
+:root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: 100%;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  font-family: "Jost", sans-serif;
+}
+html {
+  overflow: hidden;
+  height: 100%;
+}
+
+section {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  transform-style: inherit;
+}
+
+#section {
+  z-index: -1;
+  position: relative;
+  min-height: 80vh;
+  width: 100%;
+  margin: auto;
+  transform-style: inherit;
+  // overflow: hidden;
+}
+#logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 19em;
+  margin-top: 10em;
+  img {
+    height: 10em;
+  }
+}
+
+#section ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1em;
+  padding-top: 0.5em;
+  font-size: 1.6em;
+  font-weight: 500;
+  position: relative;
+  top: -482px;
+  right: 5px;
+}
+.login a {
+  padding: 0.85em 1em;
+  margin: 0 0.3em;
+
+}
+.search a {
+  padding: 0.85em 1em;
+  margin: 0 0.3em;
+}
+
+.register {
+  padding: 0.85em 1em;
+  margin: 0 0.3em;
+}
+
+#nav-links {
+  a {
+    color: black;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+#section::before {
+  background: url("./images/home_logged.jpg");
+  content: "";
+  top: -154px;
+  left: 36px;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: translateZ(-1px) scale(2.1);
+  z-index: -2;
+}
+
+.section-content {
+  position: absolute;
+  top: 79px;
+  left: 83px;
+  right: 0;
+  bottom: 0;
+  color: black;
+  h3 {
+    font-size: 1.5em;
+  }
+  p {
+    font-size: 1em;
+    width: 30%;
+  }
+}
+
+#section1 {
+  background-color: white;
+  z-index: 1;
+  height: 150vh;
+  overflow: hidden;
+  padding: 5em;
+}
+.animate {
+  opacity: 0;
+  transition: opacity 350ms ease-in;
+}
+
+.animate.appear {
+  opacity: 1;
+}
+
+.top,
+.bottom,
+.middle {
+  transition-delay: 350ms;
+  transition: transform 1s ease-in;
+  opacity: 0;
+}
+
+.top.appear {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.middle.appear {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.bottom.appear {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.imgGal {
+  margin-top: 3em;
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(12, 1fr);
+  position: relative;
+}
+
+.top {
+  grid-column: 1 / span 7;
+  grid-row: 1;
+  padding-top: 25%;
+  z-index: 1;
+  transform: translateX(50%);
+
+  img {
+    height: 28em;
+  }
+}
+
+.middle {
+  grid-column: 3 / span 9;
+  grid-row: 1;
+  padding-left: 50%;
+  transform: translateX(50%);
+
+  img {
+    height: 30em;
+  }
+}
+
+.middle2 {
+  grid-column: 3 / span 9;
+  grid-row: 1;
+  padding-left: 35%;
+  transform: translateX(50%);
+
+  img {
+    height: 18em;
+  }
+}
+
+.bottom {
+  grid-column: 8 / span -1;
+  grid-row: 1;
+  padding-top: 53%;
+  z-index: -1;
+  transform: translate(50%);
+
+  img {
+    height: 28em;
+  }
+}
+
+hr {
+  position: absolute;
+  top: 837px;
+  left: 250px;
+  width: 5em;
+  color: #003300;
+}
+
+.statement {
+  position: absolute;
+  top: 775px;
+  left: 250px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 3em;
+  color: #003300;
+}
+.statePara {
+  position: absolute;
+  top: 858px;
+  left: 240px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.4em;
+}
+
+#section2::before {
+  background: url("https://media.architecturaldigest.com/photos/5dc33b204618520008390759/16:9/pass/lights.2.jpgs");
+  content: "";
+  // position: relative;
+  width: 100%;
+  height: 100vh;
+  background-size: 100%;
+  background-position: center;
+  background-attachment: fixed;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+
+  transform: translateZ(-0.5px) scale(1.2);
+  z-index: -1;
+}
+
+#section3 {
+  height: 101vh;
+  background: #fafafa;
+  z-index: 1;
+}
+
+#section4::before {
+  background: url("https://hips.hearstapps.com/hmg-prod/images/hbz-candles-index-1597775418.jpg?crop=1.00xw:1.00xh;0,0&resize=1200:*");
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+  background-size: 100%;
+  background-position: center;
+  background-attachment: fixed;
+  display: block;
+
+  transform: translateZ(-0.5px) scale(1.6);
+  z-index: -1;
+}
+
+// section 2 & 4 text styling
+
+.hero-text, .hero-text2 {
+  padding: 1em;
+  background-color: rgba(0, 0, 0, 0.253);
+  color: white;
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  text-align: center;
+  transform: translate(-25%, -20%);
+  h4 {
+    font-weight: 400;
+    font-size: 3.5em;
+    margin: 0;
+  }
+  p {
+    font-size: 1.8em;
+  }
+  button {
+    font-size: 1.5em;
+    background-color: white;
+    padding: 0.5em;
+    border-radius: 4px;
+    border: solid white 1px;
+  }
+  a {
+    color: black;
+  }
+}
+
+.hero-text {
+  top: 30%;
+  left: 30%;
+}
+
+.hero-text2 {
+  top: 45%;
+  left: 35%;
+}
+
+#section5 {
+  background-color: white;
+  z-index: 1;
+  height: 150vh;
+  overflow: hidden;
+  padding: 5em;
+}
+
+
+#section6::before {
+  background: url("./images/bg-3.jpg");
+  content: "";
+  position: absolute;
+  top: -100px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 120vh;
+  background-size: 100%;
+  background-position: center;
+  background-attachment: fixed;
+  display: block;
+
+  transform: translateZ(-0.5px) scale(1.6);
+  z-index: -1;
+}
+
+#section7 {
+  background-color: white;
+  z-index: 1;
+  height: 150vh;
+  overflow: hidden;
+  padding: 5em;
+}
+
+// .img-container {
+// display: flex;
+// }
+// .imgStyle1, .imgStyle2, .imgStyle3, .imgStyle4 {
+//   height: 25em;
+//   padding: 2em;
+//   border-radius: 50%;
+// }
+
+// .imgStyle2, .imgStyle4 {
+//   margin-top: 5em;
+// }
+
+
+.vases {
+padding-top: 20em;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+position: absolute;
+top: -212px;
+    right: -137px;
+
+h3 {
+  font-size: 4em;
+  font-family: "Cormorant Garamond", serif;
+}
+
+p {
+  font-size: 1.2em;
+  width: 50%;
+  text-align: center;
+
+}
+}
+
+.vases {
+padding-top: 20em;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+position: absolute;
+top: -212px;
+    right: -137px;
+
+h3 {
+  font-size: 4em;
+  font-family: "Cormorant Garamond", serif;
+}
+
+p {
+  font-size: 1.2em;
+  width: 50%;
+  text-align: center;
+
+}
+}
+
