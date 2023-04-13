@@ -485,7 +485,7 @@ body {
       opacity: 0;
     }
     100% {
-      height: 70vh;
+      height: 72vh;
       opacity: 1;
     }
   }
