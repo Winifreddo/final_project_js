@@ -47,6 +47,6 @@ $("#login-submit").click(function (e) {
     errorMes.css("color", "red");
     ids.eq(1).css("border", "1px solid red");
   } else if (uNameTest && passTest) {
-    window.location.href = "index.html";
+    window.location.href = "home.html";
   }
 });
