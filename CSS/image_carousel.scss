@@ -1,0 +1,104 @@
+/* image slider styling */
+/* text styling */
+
+h2 {
+    font-weight: 200;
+    font-family: "Jost", sans-serif;
+    // margin-top: 1em;
+    padding-top: 1em;
+    font-size: 4em;
+    letter-spacing: 2px;
+    text-align: center;
+  
+    margin-bottom: 0;
+  }
+  
+  #envy {
+    font-family: "Cormorant Garamond", serif;
+  }
+  
+  #heading-decor {
+    font-weight: 500;
+    letter-spacing: 2.5px;
+  }
+  
+  .heading {
+    text-align: center;
+    margin-bottom: 0.75em;
+    p {
+      margin: auto;
+      margin-top: 1em;
+      margin-bottom: 1em;
+      font-size: 1.1em;
+      width: 60%;
+    }
+  }
+  .wrapper {
+    border-radius: 4px;
+    height: 450px;
+    width: 1448px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 0.5em;
+    background-color: white;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-top: 0.5em;
+  }
+  
+  .carousel {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    left: 0;
+    transition: all 1s ease;
+  }
+  
+  .card {
+    border-radius: 4px;
+  
+    /* background-color: #e0d9d3; */
+    min-width: 350px;
+    height: 385px;
+    margin-right: 16px;
+    display: inline-block;
+  }
+  
+  .button-wrapper {
+    position: absolute;
+    bottom: 0;
+    left: 48%;
+  }
+  
+  .button-wrapper button {
+    border: none;
+    background-color: rgba(0, 0, 0, 0.47);
+    height: 0.75em;
+    width: 0.75em;
+    border-radius: 50%;
+    color: black;
+    font-size: 1.5em;
+  }
+  
+  .card img {
+    margin-top: 0.5em;
+    width: 345px;
+    border-radius: 50%;
+    height: 345px;
+  }
+  
+  h5 {
+    margin: 0;
+    font-size: 1.1em;
+    font-weight: 300;
+  }
+  
+  li {
+    text-align: center;
+    color: black;
+  }
+  
